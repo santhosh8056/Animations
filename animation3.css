@@ -1,0 +1,42 @@
+body,html {
+    height: 100%;
+}
+div{
+    background-color: orangered;
+    width: 150px;
+    height: 150px;
+    position: absalute;
+    margin-left: 400px;
+    margin-top: 200px;
+}
+.triangle{
+transform:rotate(45deg);
+animation-name: tiangle;
+animation-duration: 3s;
+animation-timing-function: ease-out;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-play-state: running;
+}
+@keyframes triangle {
+    0% {
+        height: 110px;
+        border-left:0px;
+        border-right: 0px;
+        transform:skew(1.0,2.0);
+      
+    }
+
+    50% {
+        height: 300px;
+        border-left:100px;
+        border-right: 100px;
+       
+    }
+
+    100% {
+        transform:skew(1.0,2.0);
+        border-left:300px;
+        border-right: 300px;
+    }
+}
